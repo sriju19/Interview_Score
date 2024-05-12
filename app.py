@@ -1,4 +1,4 @@
-!pip install joblib
+pip install joblib
 import streamlit as st
 import joblib as joblib
 import pandas as pd
