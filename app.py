@@ -1,10 +1,10 @@
-
 import streamlit as st
-import joblib
+import pickle
 import pandas as pd
 
 # Load the model
-model, ref_col, target = joblib.load("model.pkl")
+with open("model.pkl", "rb") as f:
+    model, ref_col, target = pickle.load(f)
 
 # Set page title and icon
 st.set_page_config(page_title="Salary Predictor", page_icon="💰")
