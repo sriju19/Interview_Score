@@ -28,7 +28,7 @@ if nav == "Predict":
     # Predict based on user input
     if submit_button:
         prediction = model.predict([[n, m, p]])
-        st.success(f"Your predicted salary is ${round(prediction[0], 2)}")
+        st.success(f"Your predicted salary is {round(prediction[0], 2)}")
 else:
     st.subheader("Contribute")
     st.write("Have more data to improve predictions? Feel free to contribute!")
