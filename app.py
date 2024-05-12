@@ -1,6 +1,6 @@
 
 import streamlit as st
-import joblib as joblib
+import joblib
 import pandas as pd
 
 # Load the model
